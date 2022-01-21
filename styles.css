@@ -1,0 +1,103 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+input{
+    display: block;
+    width: 100%;
+    margin-top: .8em;
+    padding : .7em;
+    background-color: inherit;
+    border : 1px solid #ced4da;
+    border-radius: 5px;
+    caret-color: white ;
+    transition: border-color .1s ease-out;
+    color : white;
+
+}
+input:focus {
+    border-color: #17a2b8;
+}
+a{
+    text-decoration: none;
+    color : inherit;
+    font-size: inherit;
+
+}
+a:hover{
+    text-decoration: underline;
+}
+p{
+   color : white;
+   font-size: 1.2rem;
+   text-align: center;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(36, 53, 63);
+    display : grid;
+    place-items: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+h1{
+    text-align: center;
+    font-size : 3rem;
+    color : #17a2b8;
+    margin : 0;
+}
+
+section{
+    display : flex;
+    flex-direction: column;
+    width: min(70%,900px);
+    gap: 2em;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    padding : 2em;
+    border-radius: 10px;
+}
+
+section div{
+    display : flex;
+    flex-direction: column;
+    gap: 1em;
+    color : #ced4da;
+    font-size : 1.2rem;
+    color : white;
+   
+
+}
+button{
+    color : #17a2b8;
+    padding : 1em;
+    background-color : inherit;
+    border : 1px solid #17a2b8;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all .2s ease-out;
+    cursor: pointer;
+}
+button:hover{
+    background-color : #17a2b8;
+    color : white;
+}
+.error{
+    padding : 1em;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color : red;
+    border-radius : 10px;
+
+}
+[name="logoutBtn"]{
+    position: fixed;
+    background-color : red;
+    border-radius: 50%;
+    bottom : 15px;
+    right : 15px;
+    color : white;
+    border : none;
+    width : 100px;
+    height : 100px;
+    
+}
